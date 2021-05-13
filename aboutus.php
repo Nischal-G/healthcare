@@ -1,24 +1,25 @@
 <?php
 include("header.php");
 ?>
-<div class="wrapper col2" style="width: 974px;background-color: #3882C4">
-  <div id="gallery">
-    <ul>
-      <li class="placeholder" style="background-image:url(images/demo/image1.jpg);">Image Holder</li>
-      <li><a class="swap" style="background-image:url(images/demo/img3.jpg);" href="#gallery"><strong>Services</strong><span><img src="images/demo/image1.jpg" alt="" /></span></a></li>
-      <li><a class="swap" style="background-image:url(images/demo/img1.jpg);" href="#gallery"><strong>Products</strong><span><img src="images/demo/shr_290913_hospital2.jpg" alt="" /></span></a></li>
-      <li class="last"><a class="swap" style="background-image:url(images/demo/img2.jpg);" href="#gallery"><strong>Company</strong><span><img src="images/demo/shr_290913_hospital5.jpg" alt="" /></span></a></li>
-    </ul>
-    <div class="clear"></div>
+<div class="wrapper col2" style="background-color: #3882C4">
+  <div id="gallery" style="height: auto;">
+    <div style="width:100%;height: auto; background-color: #FFFFFF;text-align: center;">
+      <div><img src="images/services.jpg" width="auto%" height="400px"></div>      
+    </div>
+    <!-- <div class="clear"> -->
+      
+    </div>
   </div>
+
+
 </div>
 <div class="wrapper col4">
   <div id="container" >
     <div id="content">
-      <h1>About SDM Hospital</h1>
-      <p align="justify">Shri Kshetra Dharmasthala has immensely contributed to the spiritual, economic and social development of Karnataka.  It is imparting education to thousands of students all over Karnataka through its “SDM Educational Society” wing. SDM College of Medical sciences & Hospital in Dharwad, apart from providing quality medical education, is creating a revolution in health care scenario of Northern Karnataka.  It is a brain child of Dr. D. Veerendra Heggade, Rev. President of SDM Educational Society.  Way back in year 2001, a group of people from Dharwad approached Dr. Heggade and requested him to start a Hospital.  Dr. Heggade, understanding the health care needs of this part of Karnataka decided to start a Hospital with a Medical College attached to it.  On March 3rd, 2002, Mr. S. M. Krishna, the then Chief Minister laid the foundation stone for the Hospital building..</p>
-      <p align="justify">SDM Hospital is located on the highway connecting Hubli and Dharwad.  It is spread over 65 acres of land, in a serene atmosphere. This campus, apart from Medical College and Hospital, houses Nursing Institute, Physiotherapy College, Students Hostels, Staff Quarters and abodes for patient’s relatives.</p>
-      <p align="justify">“Royal treatment for common man” has been the mission statement of SDM Hospital. Every person who has taken treatment in this Hospital would certainly feel this.  The clean environment and humble services of staff have been making plenty of people recover their health every day. Hospital is also fostering quality research in medical field.  Regular workshops and conferences are being conducted to enhance the knowledge of doctors working within the Hospital and also those within twin cities. For the community, Hospital conducts regular free health camps, family planning camps, cataract camps, spirometry camps etc.  Within very short span since its inception, under the able leadership of Dr. Niranjan Kumar, Medical Director, this Hospital has made a prominent name in the medical map of India. </p>
+      <h1>About Us</h1>
+      <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor felis, vulputate sed gravida faucibus, dignissim sit amet felis. Aliquam erat volutpat. Praesent tincidunt sapien sit amet sapien tristique, a pulvinar erat maximus. Nam sit amet dictum ligula. Donec at metus vitae metus porttitor aliquam. Nam felis sapien, eleifend ut lectus placerat, dictum placerat nisl. Mauris placerat nibh lectus. Cras vitae sagittis nulla, nec suscipit purus. Pellentesque faucibus finibus nulla vitae dignissim. Ut elit mi, finibus eu urna nec, semper eleifend lacus. Ut porttitor sem in aliquam vehicula.</p>
+
+      <p>Vivamus eu tristique eros, sit amet pretium tortor. Mauris pellentesque lorem vitae enim ullamcorper, nec elementum nisl efficitur. Nunc pharetra in massa vitae maximus. Donec et vulputate dui. Sed tempor, odio ornare ultricies facilisis, lorem erat elementum neque, quis luctus tellus turpis sit amet dui. Fusce sed fringilla justo. Donec pulvinar dapibus lorem at elementum. Integer lorem massa, ultricies non nunc quis, ultrices sodales orci. Nam euismod posuere urna sed feugiat. Quisque luctus consectetur lacus, ac ornare diam scelerisque nec. Maecenas id leo dictum, malesuada sem feugiat, posuere nisi. Ut sed mi massa. Duis commodo enim in erat accumsan, fringilla vehicula justo rhoncus. Donec feugiat finibus tortor non scelerisque. Etiam id fringilla erat.</p>
       <div class="homecontent">
         <ul>
           <li>
