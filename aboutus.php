@@ -1,7 +1,7 @@
 <?php
 include("header.php");
 ?>
-<div class="wrapper col2">
+<div class="wrapper col2" style="width: 974px;background-color: #3882C4">
   <div id="gallery">
     <ul>
       <li class="placeholder" style="background-image:url(images/demo/image1.jpg);">Image Holder</li>
@@ -13,7 +13,7 @@ include("header.php");
   </div>
 </div>
 <div class="wrapper col4">
-  <div id="container">
+  <div id="container" >
     <div id="content">
       <h1>About SDM Hospital</h1>
       <p align="justify">Shri Kshetra Dharmasthala has immensely contributed to the spiritual, economic and social development of Karnataka.  It is imparting education to thousands of students all over Karnataka through its “SDM Educational Society” wing. SDM College of Medical sciences & Hospital in Dharwad, apart from providing quality medical education, is creating a revolution in health care scenario of Northern Karnataka.  It is a brain child of Dr. D. Veerendra Heggade, Rev. President of SDM Educational Society.  Way back in year 2001, a group of people from Dharwad approached Dr. Heggade and requested him to start a Hospital.  Dr. Heggade, understanding the health care needs of this part of Karnataka decided to start a Hospital with a Medical College attached to it.  On March 3rd, 2002, Mr. S. M. Krishna, the then Chief Minister laid the foundation stone for the Hospital building..</p>

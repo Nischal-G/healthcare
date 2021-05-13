@@ -1,4 +1,4 @@
-<div class="wrapper col5" style="background-color: gray">
+<div class="wrapper col5" style="background-color: #3882C4">
   <div id="footer">
 
     <div id="copyright">
