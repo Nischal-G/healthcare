@@ -131,6 +131,7 @@ include("header.php");
   </div>
 </center>
 </div>
+
 <?php
 include("footer.php");
 ?>

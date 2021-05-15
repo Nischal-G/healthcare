@@ -100,7 +100,8 @@ $tim = date("H:i:s");
 </script>
 <style>
 input[type=submit]{
-background-color: #4CAF50; /* Green */ border: none; 
+background-color: #3882C4; 
+border: none; 
 cursor:pointer;
 color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
 }
