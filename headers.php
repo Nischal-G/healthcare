@@ -100,12 +100,20 @@ $tim = date("H:i:s");
 </script>
 <style>
 input[type=submit]{
-background-color: #4CAF50; /* Green */ border: none; 
+background-color: #3882C4;  
+border: none; 
 cursor:pointer;
 color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
 }
 input[type=reset]{
-background-color: #4CAF50; /* Green */ border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;
+background-color: #3882C4;
+border: none; 
+color: white; 
+padding: 15px 32px; 
+text-align: center; 
+text-decoration: none; 
+display: inline-block; 
+font-size: 16px;
 }
 input[type=text]{
 	display: block;
@@ -165,10 +173,10 @@ input[type=number]{
 </style>
 </head>
 <body id="top">
-<div class="wrapper col1" style="background-color: gray">
+<div class="wrapper col1" style="background-color: #3882C4">
 <center><a href="index.php"></center>
   <div id="head"><br><br>
-    	 <center><h1 style="color: #000">Hospital Management System</h1></center>
+    	 <center><h1 style="color: #FFFFFF">Online Health Record Management System</h1></center>
    
   </div>
       <div style="text-align:center">

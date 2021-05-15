@@ -1,4 +1,4 @@
-<?php
+	<?php
 session_start();
 include("header.php");
 include("dbconnection.php");
@@ -66,7 +66,7 @@ $readonly = " readonly";
   </div>
 </div>
 <div class="wrapper col4">
-  <div id="container">
+  <div id="container" style="padding: 30px 300px">
   
  <?php
 if(isset($_POST[submit]))
@@ -95,7 +95,7 @@ else
 {
  ?>
    <form method="post" action="" name="frmpatapp" onSubmit="return validateform()">
-    <table width="532" border="3">
+    <table width="532">
       <tbody>
         <tr>
           <td width="34%">Patient Name</td>

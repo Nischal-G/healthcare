@@ -7,7 +7,7 @@ if(isset($_POST[submit]))
 				<strong>Message :-</strong> $_POST[comment]
 				";
 	
-	sendmail("yashikachinz1997@gmail.com","Mail from Appoint My Doctor",$message);
+	sendmail("test@gmail.com","Mail from Appoint My Doctor",$message);
 }
 ?>
 <div class="wrapper col2">
@@ -20,12 +20,11 @@ if(isset($_POST[submit]))
 <div class="wrapper col4">
   <div id="container">
     <h6>Our Address</h6>
-    <p>
-Online Hospital Management System<br />
+    <p>Online Health Record Management System<br />
 
-<strong>tel</strong>:080 65110488<br />
+<strong>tel</strong>:123456789<br />
 
-<strong>Email ID</strong>: jude@gmail.com</p>
+<strong>Email ID</strong>: test@mail.com</p>
 
         <h6>Contact Us by entering following information</h6>
             <form action="" method="post">

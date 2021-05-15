@@ -24,10 +24,10 @@ if(isset($_GET[delid]))
     <table class="order-table">
       <thead>
         <tr>
-          <td width="12%" height="40">Admin Name</td>
-          <td width="11%">Login ID</td>
-          <td width="12%">Status</td>
-          <td width="34%">Action</td>
+          <th width="22%" height="40"><div align="center">Admin Name</div></th>
+          <th width="21%"><div align="center">Login ID</div></th>
+          <th width="22%"><div align="center">Status</div></th>
+          <th width="34%"><div align="center">Action</div></th>
         </tr>
         </thead>
        <tbody>
@@ -37,11 +37,11 @@ if(isset($_GET[delid]))
 		while($rs = mysqli_fetch_array($qsql))
 		{
         echo "<tr>
-          <td>&nbsp;$rs[adminname]</td>
-          <td>&nbsp;$rs[loginid]</td>
-          <td>&nbsp;$rs[status]</td>
-          <td>&nbsp;
-		  <a href='admin.php?editid=$rs[adminid]'>Edit</a>| <a href='viewadmin.php?delid=$rs[adminid]'>Delete</a> </td>
+          <td><div align="."center".">&nbsp;$rs[adminname]</div></td>
+          <td><div align="."center".">&nbsp;$rs[loginid]</div></td>
+          <td><div align="."center".">&nbsp;$rs[status]</div></td>
+          <td><div align="."center".">&nbsp;
+		  <a href='admin.php?editid=$rs[adminid]'>Edit</a>| <a href='viewadmin.php?delid=$rs[adminid]'>Delete</a> </div></td>
         </tr>";
 		}
 		?>

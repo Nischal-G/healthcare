@@ -9,15 +9,13 @@ list-style: none;
 }
 #mmenu {
 width: 100%;
-/*margin: 60px auto;*/
-border: 1px solid #222;
 background-color: #111;
-background-image: -moz-linear-gradient(#444, #111); 
-background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111)); 
-background-image: -webkit-linear-gradient(#444, #111); 
-background-image: -o-linear-gradient(#444, #111);
-background-image: -ms-linear-gradient(#444, #111);
-background-image: linear-gradient(#444, #111);
+background-image: -moz-linear-gradient(#132B41, #0C1C2B); 
+background-image: -webkit-gradient(linear, left top, left bottom, from(#132B41), to(#0C1C2B)); 
+background-image: -webkit-linear-gradient(#132B41, #0C1C2B); 
+background-image: -o-linear-gradient(#132B41, #0C1C2B);
+background-image: -ms-linear-gradient(#132B41, #0C1C2B);
+background-image: linear-gradient(#132B41, #0C1C2B);
 -moz-border-radius: 6px;
 -webkit-border-radius: 6px;
 border-radius: 6px;
@@ -39,9 +37,9 @@ zoom:1;
 #mmenu li {
 float: left;
 border-right: 1px solid #222;
--moz-box-shadow: 1px 0 0 #444;
--webkit-box-shadow: 1px 0 0 #444;
-box-shadow: 1px 0 0 #444;
+-moz-box-shadow: 1px 0 0 #132B41;
+-webkit-box-shadow: 1px 0 0 #132B41;
+box-shadow: 1px 0 0 #132B41;
 position: relative;
 }
 #mmenu a {
@@ -68,13 +66,13 @@ position: absolute;
 top: 38px;
 left: 0;
 z-index: 9999; 
-background: #444; 
-background: -moz-linear-gradient(#444, #111);
-background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
-background: -webkit-linear-gradient(#444, #111); 
-background: -o-linear-gradient(#444, #111); 
-background: -ms-linear-gradient(#444, #111); 
-background: linear-gradient(#444, #111);
+background: #132B41; 
+background: -moz-linear-gradient(#132B41, #0C1C2B);
+background-image: -webkit-gradient(linear, left top, left bottom, from(#132B41), to(#0C1C2B));
+background: -webkit-linear-gradient(#132B41, #0C1C2B); 
+background: -o-linear-gradient(#132B41, #0C1C2B); 
+background: -ms-linear-gradient(#132B41, #0C1C2B); 
+background: linear-gradient(#132B41, #0C1C2B);
 -moz-box-shadow: 0 -1px rgba(255,255,255,.3);
 -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,.3);
 box-shadow: 0 -1px 0 rgba(255,255,255,.3); 
@@ -106,9 +104,9 @@ float: none;
 display: block;
 border: 0;
 _line-height: 0; /*IE6 only*/
--moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
--webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+-moz-box-shadow: 0 1px 0 #0C1C2B, 0 2px 0 #666;
+-webkit-box-shadow: 0 1px 0 #0C1C2B, 0 2px 0 #666;
+box-shadow: 0 1px 0 #0C1C2B, 0 2px 0 #666;
 }
 #mmenu ul li:last-child { 
 -moz-box-shadow: none;
@@ -118,7 +116,7 @@ box-shadow: none;
 #mmenu ul a { 
 padding: 10px;
 width: 130px;
-_height: 10px; /*IE6 only*/
+height: 10px;
 display: block;
 white-space: nowrap;
 float: none;
@@ -145,7 +143,7 @@ left: 40px;
 top: -6px;
 border-left: 6px solid transparent;
 border-right: 6px solid transparent;
-border-bottom: 6px solid #444;
+border-bottom: 6px solid #132B41;
 }
 #mmenu ul ul li:first-child a:after {
 left: -6px;
@@ -176,7 +174,7 @@ if(isset($_SESSION[adminid]))
 <div id="mmenu">
 <li><a href="adminaccount.php">Account</a></li>
 <li>
-<a href=" ######### ">Profile</a>
+<a href="#">Profile</a>
     <ul>
     <li><a href="adminprofile.php">Admin Profile</a></li>
     <li><a href="adminchangepassword.php">Change Password</a></li>
@@ -184,14 +182,14 @@ if(isset($_SESSION[adminid]))
     	<li><a href="viewadmin.php" style="width:150px;">View Admin</a></li>
     </ul>
 </li>
-<li><a href=" ######### ">Patient</a>
+<li><a href="#">Patient</a>
     <ul>
    <li><a href="addpatient.php">Add Patient</a></li>
         <li><a href="viewpatient.php">View Patient Records</a></li>
     </ul>
 </li>
 <li>
-<a href=" ######### ">Appointment</a>
+<a href="#">Appointment</a>
     <ul>
     <li><a href="appointment.php" style="width:200px;">New Appointment</a></li>
     <li><a href="viewappointmentpending.php" style="width:200px;">View Pending Appointments</a></li>
@@ -200,7 +198,7 @@ if(isset($_SESSION[adminid]))
 </li>
 <li><a href="viewtreatmentrecord.php">Treatment</a></li>
 <li>
-<a href=" ######### ">Doctor</a>
+<a href="#">Doctor</a>
     <ul>
     <li><a href="doctor.php">Add Doctor</a></li>
     <li><a href="Viewdoctor.php">View Doctor</a></li>
@@ -210,7 +208,7 @@ if(isset($_SESSION[adminid]))
 </li>
     
 <li>
-<a href=" ######### ">Settings</a>
+<a href="#">Settings</a>
     <ul>
   		
       
@@ -234,32 +232,32 @@ if(isset($_SESSION[doctorid]))
 <div id="mmenu">
     <li><a href="doctoraccount.php">Account</a></li>
     <li>
-    <a href=" ######### ">Settings</a>
+    <a href="#">Settings</a>
         <ul>
        <li><a href="doctorprofile.php">Profile</a></li>
             <li><a href="doctorchangepassword.php">Change Password</a></li>
           </ul>
     </li>
     <li>
-    <a href=" ######### ">Appointment</a>
+    <a href="#">Appointment</a>
         <ul>
     <li><a href="viewappointmentpending.php" style="width:250px;">View Pending Appointments</a></li>
     <li><a href="viewappointmentapproved.php" style="width:250px;">View Approved Appointments</a></li>
         </ul>
     </li>
-    <li><a href=" ######### ">Patient</a>
+    <li><a href="#">Patient</a>
         <ul>
        <li><a href="viewpatient.php">View Patient</a></li>
         </ul>
     </li>
-       <li><a href=" ######### ">Doctor Timings</a>
+       <li><a href="#">Doctor Timings</a>
         <ul>
        <li><a href="doctortimings.php">Add Timings</a></li>
        <li><a href="viewdoctortimings.php">View Timings</a></li>
         </ul>
     </li>
     <li>
-    <a href=" ######### ">Treatment</a>
+    <a href="#">Treatment</a>
         <ul>
            <li><a href="viewtreatmentrecord.php">View Treatment Records</a></li>
             <li><a href="viewtreatment.php">View Treatment</a></li>
@@ -284,14 +282,14 @@ if(isset($_SESSION[patientid]))
 <div id="mmenu">
 <li><a href="patientaccount.php">Account</a></li>
 <li>
-<a href=" ######### ">Appointment</a>
+<a href="#">Appointment</a>
     <ul>
     <li><a href="patientappointment.php" style="width:200px;">Add Appointment</a></li>
     <li><a href="viewappointment.php" style="width:200px;">View Appointments</a></li>
     </ul>
 </li>
 <li>
-<a href=" ######### ">Profile</a>
+<a href="#">Profile</a>
     <ul>
     <li><a href="patientprofile.php">View Profile</a></li>
     <li><a href="patientchangepassword.php">Change Password</a></li>
@@ -299,13 +297,13 @@ if(isset($_SESSION[patientid]))
 </li>
 
 <li>
-<a href=" ######### ">Prescription</a>
+<a href="#">Prescription</a>
     <ul >
        <li><a style="width:200px;" href="patviewprescription.php">View Prescription Records</a></li>
     </ul>
 </li>
 <li>
-<a href=" ######### ">Treatment</a>
+<a href="#">Treatment</a>
     <ul>
        <li><a href="viewtreatmentrecord.php">View Treatment Records</a></li>
     </ul>

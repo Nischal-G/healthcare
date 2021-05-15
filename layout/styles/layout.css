@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 @import url("homepage.css");
@@ -14,7 +15,7 @@ body{
 	font-size:13px; 
 	font-family:verdana, Arial, Helvetica, sans-serif; 
 	color:#FFFFFF; 
-	background-color:#4F473A;
+	/*background-color:#4F473A;*/
 }
 
 .justify{
@@ -102,6 +103,11 @@ div.wrapper{
 	background-color:#04acec;
 }
 
+.col6{
+	color:#FFFFFF; 
+	background-color:#7AABD7;
+}
+
 /* ----------------------------------------------Generalise------------------------------------- */
 
 #head, #gallery, #breadcrumb, #container, #footer{
@@ -122,6 +128,7 @@ div.wrapper{
 	padding:0; 
 	list-style:none; 
 	line-height:normal;
+	color: #FFFFFF;
 }
 #head h1 a{
 	position:absolute; 
@@ -146,9 +153,12 @@ div.wrapper{
 
 /* ----------------------------------------------Breadcrumb Navigation------------------------------------- */
 
-#breadcrumb{
-	padding:20px 0;
+#breadcrumb {
+    padding: 26px 196px;
+    font-size: 20px;
+    font-weight: bold;
 }
+
 #breadcrumb a{
 	font-weight:bold;
 }
@@ -162,6 +172,9 @@ div.wrapper{
 }
 #breadcrumb ul li.first{
 	font-weight:bold;
+	/*margin-left: 100px;*/
+	/*padding-left: 200px;*/
+	font-size: 20px;
 }
 #breadcrumb ul li.current a{
 	text-decoration:underline;
@@ -170,7 +183,7 @@ div.wrapper{
 /* ----------------------------------------------Container------------------------------------- */
 
 #container{
-	padding: 100px 200px;
+	padding: 30px 200px;
 }
 #container h1, #container h2, #container h3, #container h4, #container h5, #container h6{
 	margin:0 0 15px 0; 
@@ -191,6 +204,7 @@ div.wrapper{
 	display:block; 
 	float:left; 
 	width:100%;
+	padding: 20px;
 }
 #content img{
 	margin-top: 30px;
@@ -259,7 +273,9 @@ div.wrapper{
 	display:block; 
 	width:300px; 
 	margin-bottom:40px;
+	background-color: #C77D3B; 
 }
+
 #column .holder p{
 	line-height:1.6em;
 }
@@ -272,7 +288,7 @@ div.wrapper{
 	font-size:20px; 
 	font-weight:normal; 
 	color:#666666; 
-	background-color:#FFFFFF; 
+	/*background-color:#FFFFFF; */
 	line-height:normal; 
 	border-bottom:1px dashed #CCCCCC;
 }
@@ -281,7 +297,7 @@ div.wrapper{
 	margin:-15px 8px 0 0; 
 	padding:5px; 
 	color:#666666; 
-	background-color:#F7F7F7; 
+	/*background-color:#F7F7F7; */
 	border:1px solid #CCCCCC;
 }
 #column .holder p.readmore{
@@ -297,7 +313,7 @@ div.wrapper{
 	margin:0 0 10px 0; 
 	padding:4px; 
 	color:#666666; 
-	background-color:#F7F7F7; 
+	/*background-color:#F7F7F7; */
 	border:1px solid #CCCCCC;
 }
 
@@ -316,9 +332,10 @@ div.wrapper{
 	display:block; 
 	width:250px; 
 	margin:0; 
-	padding:20px 25px; 
+	font-weight: bold;
+	padding:7px 25px; 
 	color:#2E271D; 
-	background-color:#F9F9F9;
+	background-color:#F7F7F7;
 }
 #column #featured li p{
 	line-height:1.6em;
@@ -328,18 +345,17 @@ div.wrapper{
 	height:90px; 
 	margin:20px 0 15px 0; 
 	padding:4px; 
-	border:1px solid #CCCCCC;
+	/*border:1px solid #CCCCCC;*/
 }
 #column #featured li h2{
 	margin:0; 
 	padding:0 0 14px 0; 
 	font-size:20px; 
-	font-weight:normal; 
+	font-weight:bold; 
 	font-family:Georgia, "Times New Roman", Times, serif; 
-	color:#666666; 
-	background-color:#F9F9F9; 
+	color:#666666;  
 	line-height:normal; 
-	border-bottom:1px dashed #666666;
+	border-bottom:1px solid #666666;
 }
 #column #featured p.more{
 	display:block; 
@@ -382,6 +398,12 @@ div.wrapper{
 
 .col-2{
 	width: 35%;
+	height: 30px;
+	float: left;
+}
+
+.col-3{
+	width: 42%;
 	height: 30px;
 	float: left;
 }

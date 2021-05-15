@@ -9,7 +9,7 @@ table{
 }
 table thead th{
 	color:#FFFFFF; 
-	background-color:#666666; 
+	background-color:#132B41; 
 	border:1px solid #CCCCCC; 
 	border-collapse:collapse; 
 	text-align:center; 
@@ -21,10 +21,12 @@ table tbody td{
 	border-collapse:collapse; 
 	border-left:1px solid #CCCCCC; 
 	border-right:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
 }
 table thead th, table tbody td{
-	padding:5px; 
+	padding:5px 20px; 
 	border-collapse:collapse;
+	font-weight: bold;
 }
 table tbody tr.light{
 	color:#666666; 
