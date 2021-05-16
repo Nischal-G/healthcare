@@ -24,7 +24,7 @@ include("header.php");
         <div class="homecontent">
           <div class="clear"></div>
         </div>
-        <p style="padding-top: 15px;"><strong>Message from the Director:</strong><br><br />
+        <p style="padding-top: 15px;"><strong>What our Director says: </strong><br><br />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor felis, vulputate sed gravida faucibus, dignissim sit amet felis. Aliquam erat volutpat. Praesent tincidunt sapien sit amet sapien tristique, a pulvinar erat maximus. Nam sit amet dictum ligula. Donec at metus vitae metus porttitor aliquam. Nam felis sapien, eleifend ut lectus placerat, dictum placerat nisl. Mauris placerat nibh lectus.</p>
       </div>
       <div id="column" >
