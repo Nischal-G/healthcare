@@ -7,6 +7,8 @@ if(!isset($_SESSION['adminid']))
 include("dbconnection.php");
 include("headers.php");
 ?>
+
+
 <div class="wrapper col2">
   <div id="breadcrumb">
 
@@ -19,13 +21,13 @@ include("headers.php");
 </div>
 <div class="wrapper col4">
   <div id="container">
-  <p><form method="get" action=""><strong>Date -</strong> <input type="date" name="date" value="<?php echo $_GET[date]; ?>" ><input type="submit" name="submit" value="Submit"></form></p>
+  <p><form method="get" action=""><strong>Date -</strong> <input type="date" name="date" value="<?php echo $_POST[date]; ?>" ><input type="submit" name="submit" value="Submit"></form></p>
     <h1>Number of Appointment Records :     
     <?php
-	$sql = "SELECT * FROM appointment WHERE status='Active'";
-	if(isset($_GET[date]))
+	$sql = "SELECT * FROM appointment WHERE status='Approved'";
+	if(isset($_POST[date]))
 	{
-		$sql = $sql . " AND appointmentdate ='$_GET[date]'";
+		$sql = $sql . " AND appointmentdate ='$_POST[date]'";
 	}
 	$qsql = mysqli_query($con,$sql);
 	echo mysqli_num_rows($qsql);
@@ -34,9 +36,9 @@ include("headers.php");
     <h1>Number of Billing Reports : 
     <?php
 	$sql = "SELECT * FROM billing WHERE billingid !='0'";
-	if(isset($_GET[date]))
+	if(isset($_POST[date]))
 	{
-		$sql = $sql . " AND billingdate ='$_GET[date]'";
+		$sql = $sql . " AND billingdate ='$_POST[date]'";
 	}
 	$qsql = mysqli_query($con,$sql);
 	echo mysqli_num_rows($qsql);
@@ -46,9 +48,9 @@ include("headers.php");
     <h1>Number of Patient Records : 
     <?php
 	$sql = "SELECT * FROM patient WHERE status='Active'";
-	if(isset($_GET[date]))
+	if(isset($_POST[date]))
 	{
-		$sql = $sql . " AND admissiondate ='$_GET[date]'";
+		$sql = $sql . " AND admissiondate ='$_POST[date]'";
 	}
 	$qsql = mysqli_query($con,$sql);
 	echo mysqli_num_rows($qsql);
@@ -57,9 +59,9 @@ include("headers.php");
     <h1>Number of Treatment Records : 
     <?php
 	$sql = "SELECT * FROM treatment_records WHERE status='Active'";
-	if(isset($_GET[date]))
+	if(isset($_POST[date]))
 	{
-		$sql = $sql . " AND treatment_date  ='$_GET[date]'";
+		$sql = $sql . " AND treatment_date  ='$_POST[date]'";
 	}
 	$qsql = mysqli_query($con,$sql);
 	echo mysqli_num_rows($qsql);
@@ -69,9 +71,9 @@ include("headers.php");
     <h1>Number of Prescription  : 
     <?php
 	$sql = "SELECT * FROM prescription WHERE status='Active'";
-	if(isset($_GET[date]))
+	if(isset($_POST[date]))
 	{
-		$sql = $sql . " AND prescriptiondate   ='$_GET[date]'";
+		$sql = $sql . " AND prescriptiondate   ='$_POST[date]'";
 	}
 	$qsql = mysqli_query($con,$sql);
 	echo mysqli_num_rows($qsql);
@@ -143,3 +145,5 @@ include("headers.php");
 <?php
 include("footers.php");
 ?>
+
+

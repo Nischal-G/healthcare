@@ -4,17 +4,26 @@ include("header.php");
 include("dbconnection.php");
 if(isset($_SESSION[adminid]))
 {
-	echo "<script>window.location='adminaccount.php';</script>";
+	echo "<script>window.location='dashboard.php';</script>";
 }
 if(isset($_POST[submit]))
 {
-	$sql = "SELECT * FROM admin WHERE loginid='$_POST[loginid]' AND password='$_POST[password]' AND status='Active'";
+	// $loginid = $mysqli -> real_escape_string($_POST['loginid']);
+	// $password = $mysqli -> real_escape_string($_POST['password']);
+	$loginid=$_POST[loginid];
+	// $loginid=mysqli_real_escape_string($loginid);
+	$password=md5($_POST[password]);
+	// $password=mysqli_real_escape_string($password);
+	$sql = ("SELECT * FROM admin WHERE loginid='$loginid' 
+	AND password='$password'
+	AND status='Active'"
+);
 	$qsql = mysqli_query($con,$sql);
 	if(mysqli_num_rows($qsql) == 1)
 	{
 		$rslogin = mysqli_fetch_array($qsql);
 		$_SESSION[adminid]= $rslogin[adminid] ;
-		echo "<script>window.location='adminaccount.php';</script>";
+		echo "<script>window.location='dashboard.php';</script>";
 	}
 	else
 	{
