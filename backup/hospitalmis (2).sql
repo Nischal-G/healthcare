@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2021 at 09:52 AM
--- Server version: 5.7.26
--- PHP Version: 7.3.4
+-- Generation Time: Jun 02, 2021 at 12:01 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -70,73 +69,75 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`appointmentid`, `appointmenttype`, `patientid`, `roomid`, `departmentid`, `appointmentdate`, `appointmenttime`, `doctorid`, `status`, `app_reason`) VALUES
-(44, 'Online', 22, 15, 13, '2021-05-05', '14:03:00', 41, 'Approved', ''),
-(48, 'Online', 22, 0, 0, '2021-05-08', '17:46:00', 0, 'Approved', ''),
-(50, 'Offline', 7, 0, 0, '2021-05-05', '16:05:00', 0, 'Approved', ''),
-(51, 'Online', 9, 15, 12, '2021-05-13', '15:04:00', 37, 'Approved', ''),
-(53, 'Online', 0, 15, 14, '2021-05-08', '23:58:00', 42, '', ''),
-(56, 'Online', 22, 15, 11, '2021-05-12', '00:00:00', 43, 'Approved', ''),
-(57, 'Online', 0, 15, 13, '2021-05-04', '23:58:00', 37, '', ''),
-(58, 'Out Patient', 22, 18, 14, '2021-05-12', '12:59:00', 37, 'Approved', ''),
-(60, 'Online', 37, 16, 16, '2021-05-16', '12:00:00', 42, 'Approved', ''),
-(61, 'Online', 22, 15, 13, '2021-05-13', '05:00:00', 42, 'Approved', ''),
-(62, 'InPatient', 23, 15, 13, '2021-05-03', '01:00:00', 35, 'Approved', ''),
-(63, 'Online', 0, 16, 14, '2021-05-14', '16:04:00', 38, '', ''),
-(65, 'Out Patient', 23, 15, 13, '2021-05-16', '01:00:00', 35, 'Approved', ''),
-(67, 'Online', 0, 15, 13, '2021-05-06', '13:59:00', 43, '', ''),
-(68, 'Online', 36, 15, 13, '2021-05-09', '12:59:00', 43, 'Approved', ''),
-(70, '', 38, 0, 0, '2021-05-12', '12:59:00', 0, 'Approved', ''),
-(71, 'Offline', 7, 17, 11, '2021-05-03', '13:04:00', 44, 'Active', ''),
-(72, 'InPatient', 0, 15, 12, '2021-05-04', '00:00:00', 43, '', ''),
-(73, 'InPatient', 0, 15, 12, '2021-05-07', '00:00:00', 43, '', ''),
-(74, 'Online', 39, 15, 12, '2021-05-09', '01:00:00', 43, 'Approved', ''),
-(75, 'OutPatient', 0, 15, 11, '2021-05-05', '13:59:00', 37, '', ''),
-(76, 'Out Patient', 22, 16, 11, '2021-05-09', '11:00:00', 35, 'Approved', ''),
-(77, 'Out Patient', 22, 0, 11, '2021-05-14', '11:00:00', 39, 'Approved', ''),
-(78, 'Offline', 7, 15, 12, '2021-05-13', '01:00:00', 35, 'Approved', ''),
-(79, 'Out Patient', 40, 0, 11, '2021-05-06', '00:00:00', 45, 'Approved', ''),
-(80, 'Out Patient', 22, 0, 11, '2021-05-03', '00:00:00', 45, 'Approved', ''),
-(81, 'Out Patient', 22, 15, 13, '2021-05-08', '02:00:00', 37, 'Approved', ''),
-(82, 'Out Patient', 22, 16, 11, '2021-05-15', '02:00:00', 35, 'Approved', 'Test appointment record'),
-(83, 'ONLINE', 22, 0, 12, '2021-05-05', '02:00:00', 0, 'Pending', 'Test appointment record'),
+(44, 'Online', 22, 15, 13, '2021-05-05', '14:03:00', 41, 'Approved', 'This is test appoitnment'),
+(48, 'Online', 22, 0, 0, '2021-05-08', '17:46:00', 0, 'Approved', 'This is test appoitnment'),
+(50, 'Offline', 7, 0, 0, '2021-05-05', '16:05:00', 0, 'Approved', 'This is test appoitnment'),
+(51, 'Online', 9, 15, 12, '2021-05-13', '15:04:00', 37, 'Approved', 'This is test appoitnment'),
+(53, 'Online', 0, 15, 14, '2021-05-08', '23:58:00', 42, '', 'This is test appoitnment'),
+(56, 'Online', 22, 15, 11, '2021-05-12', '00:00:00', 43, 'Approved', 'This is test appoitnment'),
+(57, 'Online', 0, 15, 13, '2021-05-04', '23:58:00', 37, '', 'This is test appoitnment'),
+(58, 'Out Patient', 22, 18, 14, '2021-05-12', '12:59:00', 37, 'Approved', 'This is test appoitnment'),
+(60, 'Online', 37, 16, 16, '2021-05-16', '12:00:00', 42, 'Approved', 'This is test appoitnment'),
+(61, 'Online', 22, 15, 13, '2021-05-13', '05:00:00', 42, 'Approved', 'This is test appoitnment'),
+(62, 'InPatient', 23, 15, 13, '2021-05-03', '01:00:00', 35, 'Approved', 'This is test appoitnment'),
+(63, 'Online', 0, 16, 14, '2021-05-14', '16:04:00', 38, '', 'This is test appoitnment'),
+(65, 'Out Patient', 23, 15, 13, '2021-05-16', '01:00:00', 35, 'Approved', 'This is test appoitnment'),
+(67, 'Online', 0, 15, 13, '2021-05-06', '13:59:00', 43, '', 'This is test appoitnment'),
+(68, 'Online', 36, 15, 13, '2021-05-09', '12:59:00', 43, 'Approved', 'This is test appoitnment'),
+(70, '', 38, 0, 0, '2021-05-12', '12:59:00', 0, 'Approved', 'This is test appoitnment'),
+(71, 'Offline', 7, 17, 11, '2021-05-03', '13:04:00', 44, 'Active', 'This is test appoitnment'),
+(72, 'InPatient', 0, 15, 12, '2021-05-04', '00:00:00', 43, '', 'This is test appoitnment'),
+(73, 'InPatient', 0, 15, 12, '2021-05-07', '00:00:00', 43, '', 'This is test appoitnment'),
+(74, 'Online', 39, 15, 12, '2021-05-09', '01:00:00', 43, 'Approved', 'This is test appoitnment'),
+(75, 'OutPatient', 0, 15, 11, '2021-05-05', '13:59:00', 37, '', 'This is test appoitnment'),
+(76, 'Out Patient', 22, 16, 11, '2021-05-09', '11:00:00', 35, 'Approved', 'This is test appoitnment'),
+(77, 'Out Patient', 22, 0, 11, '2021-05-14', '11:00:00', 39, 'Approved', 'This is test appoitnment'),
+(78, 'Offline', 7, 15, 12, '2021-05-13', '01:00:00', 35, 'Approved', 'This is test appoitnment'),
+(79, 'Out Patient', 40, 0, 11, '2021-05-06', '00:00:00', 45, 'Approved', 'This is test appoitnment'),
+(80, 'Out Patient', 22, 0, 11, '2021-05-03', '00:00:00', 45, 'Approved', 'This is test appoitnment'),
+(81, 'Out Patient', 22, 15, 13, '2021-05-08', '02:00:00', 37, 'Approved', 'This is test appoitnment'),
+(82, 'Out Patient', 22, 16, 11, '2021-05-15', '02:00:00', 35, 'Approved', 'This is test appoitnment'),
+(83, 'ONLINE', 22, 0, 12, '2021-05-05', '02:00:00', 0, 'Pending', 'This is test appoitnment'),
 (84, '', 0, 0, 11, '2021-05-08', '12:59:00', 39, 'Approved', 'This is test appoitnment'),
 (85, 'ONLINE', 0, 0, 11, '2021-05-06', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
 (86, 'ONLINE', 0, 0, 11, '2021-05-04', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
 (87, 'ONLINE', 41, 0, 11, '2021-05-14', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
-(88, 'ONLINE', 0, 0, 19, '2021-05-12', '12:59:00', 0, 'Pending', 'tyehgd'),
-(89, 'ONLINE', 0, 0, 19, '2021-05-15', '12:59:00', 0, 'Pending', 'tyehgd'),
-(90, 'Out Patient', 42, 0, 19, '2021-05-08', '12:59:00', 40, 'Approved', 'rteuterye'),
-(91, 'InPatient', 43, 15, 11, '2021-05-06', '01:00:00', 35, 'Approved', 'Kinldy test the patient for 1 week'),
-(92, 'InPatient', 441, 15, 11, '2021-05-05', '12:59:00', 36, 'Approved', 'General appointment for testing'),
-(93, 'InPatient', 47, 15, 12, '2021-05-16', '01:00:00', 36, 'Approved', 'Test test app'),
-(94, 'InPatient', 47, 15, 12, '2021-05-09', '01:00:00', 36, 'Active', 'Test test app'),
-(95, 'InPatient', 7, 15, 12, '2021-05-10', '01:01:00', 44, 'Active', 'test'),
-(96, 'InPatient', 45, 15, 12, '2021-05-04', '01:00:00', 35, 'Approved', 'test appointment'),
-(97, 'InPatient', 48, 15, 13, '2021-05-04', '01:00:00', 35, 'Approved', 'Test reason for medicine'),
-(98, 'ONLINE', 7, 0, 11, '2021-05-04', '11:11:00', 0, 'Pending', 'pain....'),
-(99, '', 0, 0, 0, '2021-05-07', '00:00:00', 0, '', ''),
-(100, '', 0, 0, 0, '2021-05-05', '00:00:00', 0, '', ''),
-(101, 'Out Patient', 50, 15, 11, '2021-05-03', '03:33:00', 0, 'Approved', 'Body...'),
-(102, 'Online', 0, 0, 0, '2021-05-10', '00:00:00', 0, '', ''),
-(103, 'Out Patient', 0, 0, 11, '2021-05-11', '08:41:00', 45, 'Approved', 'test app'),
-(104, 'Out Patient', 7, 15, 11, '2021-05-10', '08:41:00', 35, 'Approved', 'test app'),
-(105, '', 7, 0, 11, '2021-05-14', '11:11:00', 35, 'Approved', 'simply'),
-(106, 'Out Patient', 53, 15, 11, '2021-05-08', '10:00:00', 35, 'Approved', 'jolly'),
-(107, 'Out Patient', 9, 15, 11, '2021-05-09', '11:11:00', 35, 'Approved', 'uuuuuuu'),
-(108, 'Out Patient', 7, 15, 11, '2021-05-05', '05:05:00', 35, 'Approved', 'ttttt'),
-(109, 'InPatient', 54, 16, 15, '2021-05-12', '03:00:00', 0, 'Approved', 'Hello this is patient appointment'),
-(110, 'InPatient', 56, 16, 11, '2021-05-12', '02:22:00', 42, 'Approved', 'rrrrr'),
-(111, 'InPatient', 44, 16, 12, '2021-05-08', '13:00:00', 36, 'Approved', 'Test record'),
-(112, 'Out Patient', 44, 0, 12, '2021-05-15', '01:02:00', 36, 'Approved', 'vvvv'),
-(113, 'Out Patient', 7, 0, 11, '2021-05-09', '00:02:00', 35, 'Approved', 'nnnn'),
-(114, 'Out Patient', 7, 0, 11, '2021-05-10', '11:11:00', 35, 'Approved', 'vvvvv'),
-(115, 'ONLINE', 7, 0, 12, '2021-05-07', '11:22:00', 0, 'Pending', 'nnnnnn'),
-(116, 'Out Patient', 7, 0, 11, '2021-05-16', '08:08:00', 35, 'Approved', 'bbbbb'),
-(117, 'Out Patient', 7, 0, 12, '2021-05-14', '01:01:00', 46, 'Approved', 'gggg'),
-(118, 'Out Patient', 9, 0, 11, '2021-05-05', '14:01:00', 35, 'Approved', 'cdcxdc'),
-(119, 'Out Patient', 56, 0, 11, '2021-05-09', '03:02:00', 35, 'Approved', 'mmm'),
-(120, '', 57, 0, 11, '2021-05-14', '09:00:00', 35, 'Approved', 'Appointment for monthly medical test'),
-(121, '', 59, 0, 17, '2021-05-11', '13:07:00', 41, 'Active', 'test');
+(88, 'ONLINE', 0, 0, 19, '2021-05-12', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
+(89, 'ONLINE', 0, 0, 19, '2021-05-15', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
+(90, 'Out Patient', 42, 0, 19, '2021-05-08', '12:59:00', 40, 'Approved', 'This is test appoitnment'),
+(91, 'InPatient', 43, 15, 11, '2021-05-06', '01:00:00', 35, 'Approved', 'This is test appoitnment'),
+(92, 'InPatient', 441, 15, 11, '2021-05-05', '12:59:00', 36, 'Approved', 'This is test appoitnment'),
+(93, 'InPatient', 47, 15, 12, '2021-05-16', '01:00:00', 36, 'Approved', 'This is test appoitnment'),
+(94, 'InPatient', 47, 15, 12, '2021-05-09', '01:00:00', 36, 'Active', 'This is test appoitnment'),
+(95, 'InPatient', 7, 15, 12, '2021-05-10', '01:01:00', 44, 'Active', 'This is test appoitnment'),
+(96, 'InPatient', 45, 15, 12, '2021-05-04', '01:00:00', 35, 'Approved', 'This is test appoitnment'),
+(97, 'InPatient', 48, 15, 13, '2021-05-04', '01:00:00', 35, 'Approved', 'This is test appoitnment'),
+(98, 'ONLINE', 7, 0, 11, '2021-05-04', '11:11:00', 0, 'Pending', 'This is test appoitnment'),
+(99, '', 0, 0, 0, '2021-05-07', '00:00:00', 0, '', 'This is test appoitnment'),
+(100, '', 0, 0, 0, '2021-05-05', '00:00:00', 0, '', 'This is test appoitnment'),
+(101, 'Out Patient', 50, 15, 11, '2021-05-03', '03:33:00', 0, 'Approved', 'This is test appoitnment'),
+(102, 'Online', 0, 0, 0, '2021-05-10', '00:00:00', 0, '', 'This is test appoitnment'),
+(103, 'Out Patient', 0, 0, 11, '2021-05-11', '08:41:00', 45, 'Approved', 'This is test appoitnment'),
+(104, 'Out Patient', 7, 15, 11, '2021-05-10', '08:41:00', 35, 'Approved', 'This is test appoitnment'),
+(105, '', 7, 0, 11, '2021-05-14', '11:11:00', 35, 'Approved', 'This is test appoitnment'),
+(106, 'Out Patient', 53, 15, 11, '2021-05-08', '10:00:00', 35, 'Approved', 'This is test appoitnment'),
+(107, 'Out Patient', 9, 15, 11, '2021-05-09', '11:11:00', 35, 'Approved', 'This is test appoitnment'),
+(108, 'Out Patient', 7, 15, 11, '2021-05-05', '05:05:00', 35, 'Approved', 'This is test appoitnment'),
+(109, 'InPatient', 54, 16, 15, '2021-05-12', '03:00:00', 0, 'Approved', 'This is test appoitnment'),
+(110, 'InPatient', 56, 16, 11, '2021-05-12', '02:22:00', 42, 'Approved', 'This is test appoitnment'),
+(111, 'InPatient', 44, 16, 12, '2021-05-08', '13:00:00', 36, 'Approved', 'This is test appoitnment'),
+(112, 'Out Patient', 44, 0, 12, '2021-05-15', '01:02:00', 36, 'Approved', 'This is test appoitnment'),
+(113, 'Out Patient', 7, 0, 11, '2021-05-09', '00:02:00', 35, 'Approved', 'This is test appoitnment'),
+(114, 'Out Patient', 7, 0, 11, '2021-05-10', '11:11:00', 35, 'Approved', 'This is test appoitnment'),
+(115, 'ONLINE', 7, 0, 12, '2021-05-07', '11:22:00', 0, 'Pending', 'This is test appoitnment'),
+(116, 'Out Patient', 7, 0, 11, '2021-05-16', '08:08:00', 35, 'Approved', 'This is test appoitnment'),
+(117, 'Out Patient', 7, 0, 12, '2021-05-14', '01:01:00', 46, 'Approved', 'This is test appoitnment'),
+(118, 'Out Patient', 9, 0, 11, '2021-05-05', '14:01:00', 35, 'Approved', 'This is test appoitnment'),
+(119, 'Out Patient', 56, 0, 11, '2021-05-09', '03:02:00', 35, 'Approved', 'This is test appoitnment'),
+(120, '', 57, 0, 11, '2021-05-14', '09:00:00', 35, 'Approved', 'This is test appoitnment'),
+(121, '', 59, 0, 17, '2021-05-11', '13:07:00', 41, 'Active', 'This is test appoitnment'),
+(122, 'ONLINE', 43, 0, 15, '2021-06-01', '11:43:00', 39, 'Pending', 'test'),
+(123, 'ONLINE', 45, 0, 11, '0000-00-00', '00:00:00', 35, 'Pending', '');
 
 -- --------------------------------------------------------
 
@@ -162,40 +163,40 @@ CREATE TABLE `billing` (
 --
 
 INSERT INTO `billing` (`billingid`, `patientid`, `appointmentid`, `billingdate`, `billingtime`, `discount`, `taxamount`, `discountreason`, `discharge_time`, `discharge_date`) VALUES
-(5, 47, 94, '2021-05-08', '10:12:38', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(6, 7, 78, '2021-05-13', '08:21:22', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(7, 7, 95, '2021-05-14', '08:54:33', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(8, 45, 96, '2021-05-13', '08:56:38', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(9, 22, 61, '2021-05-08', '09:57:39', 0.00, 0.00, '0 , 0 ,  ,  , ', '09:48:21', '2016-03-27'),
-(10, 48, 97, '2021-05-13', '10:06:57', 1370.00, 0.00, 'Test discount reason , test bal amt , test bal amt , test bal amt , test bal amt , test reason , test reason0', '02:59:17', '2016-03-25'),
-(11, 42, 90, '2021-05-11', '10:11:59', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(12, 0, 0, '2021-05-11', '00:00:00', 100.00, 0.00, 'kkkk , ', '04:13:27', '2018-04-03'),
-(13, 0, 0, '2021-05-06', '00:00:00', 100.00, 0.00, 'kkkk , ', '04:13:27', '2018-04-03'),
-(14, 7, 105, '2021-05-11', '00:00:00', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(15, 53, 106, '2021-05-03', '00:00:00', 0.00, 0.00, 'l , ', '07:46:14', '2018-04-03'),
-(16, 50, 101, '2021-05-08', '00:00:00', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(17, 22, 76, '2021-05-03', '00:00:00', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(18, 9, 107, '2021-05-13', '00:00:00', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(19, 7, 108, '2021-05-14', '00:00:00', 0.00, 0.00, ' ,  , patient died ,  , ', '01:46:41', '2018-03-17'),
-(20, 54, 109, '2021-05-15', '00:00:00', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(21, 23, 65, '2021-05-16', '13:29:51', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(22, 22, 77, '2021-05-04', '14:53:12', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(23, 0, 103, '2021-05-13', '14:53:45', 0.00, 0.00, ' , ', '00:00:00', '0000-00-00'),
-(24, 43, 91, '2021-05-06', '15:19:16', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(25, 56, 110, '2021-05-16', '09:44:13', 0.00, 0.00, 'lll , ', '04:14:13', '2018-04-03'),
-(26, 40, 79, '2021-05-03', '15:12:42', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(27, 22, 80, '2021-05-09', '09:44:21', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(28, 22, 81, '2021-05-06', '09:52:34', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(29, 22, 82, '2021-05-14', '15:10:46', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(30, 44, 111, '2021-05-08', '09:06:39', 0.00, 0.00, ' ,  ,  ,  , ', '00:00:00', '0000-00-00'),
-(31, 44, 112, '2021-05-07', '09:47:26', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(32, 7, 113, '2021-05-09', '09:57:00', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(33, 7, 114, '2021-05-07', '10:02:46', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(34, 7, 116, '2021-05-07', '10:11:49', 0.00, 0.00, ' , ', '00:00:00', '0000-00-00'),
-(35, 7, 117, '2021-05-11', '12:03:12', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(36, 9, 118, '2021-05-16', '13:20:28', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
-(37, 56, 119, '2021-05-16', '03:26:19', 0.00, 0.00, ' ,  , ', '00:00:00', '0000-00-00'),
-(38, 57, 120, '2021-05-03', '21:13:33', 0.00, 0.00, '', '00:00:00', '0000-00-00');
+(5, 47, 94, '2021-05-08', '10:12:38', 0.00, 0.00, 'test Discount Reason ', '12:54:04', '2021-05-11'),
+(6, 7, 78, '2021-05-13', '08:21:22', 0.00, 0.00, 'test Discount Reason ', '06:54:04', '2021-05-17'),
+(7, 7, 95, '2021-05-14', '08:54:33', 0.00, 0.00, 'test Discount Reason ', '04:54:04', '2021-05-16'),
+(8, 45, 96, '2021-05-13', '08:56:38', 0.00, 0.00, 'test Discount Reason ', '01:54:04', '2021-05-18'),
+(9, 22, 61, '2021-05-08', '09:57:39', 0.00, 0.00, 'test Discount Reason ', '10:54:04', '2021-05-22'),
+(10, 48, 97, '2021-05-13', '10:06:57', 1370.00, 0.00, 'test Discount Reason ', '01:54:04', '2021-05-20'),
+(11, 42, 90, '2021-05-11', '10:11:59', 0.00, 0.00, 'test Discount Reason ', '06:54:04', '2021-05-10'),
+(12, 0, 0, '2021-05-11', '00:00:00', 100.00, 0.00, 'test Discount Reason ', '09:54:04', '2021-05-09'),
+(13, 0, 0, '2021-05-06', '00:00:00', 100.00, 0.00, 'test Discount Reason ', '14:54:04', '2021-05-19'),
+(14, 7, 105, '2021-05-11', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '02:54:04', '2021-05-21'),
+(15, 53, 106, '2021-05-03', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '08:54:04', '2021-05-09'),
+(16, 50, 101, '2021-05-08', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '04:54:04', '2021-05-17'),
+(17, 22, 76, '2021-05-03', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '11:54:04', '2021-05-21'),
+(18, 9, 107, '2021-05-13', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '02:54:04', '2021-05-16'),
+(19, 7, 108, '2021-05-14', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '04:54:04', '2021-05-22'),
+(20, 54, 109, '2021-05-15', '00:00:00', 0.00, 0.00, 'test Discount Reason ', '12:54:04', '2021-05-14'),
+(21, 23, 65, '2021-05-16', '13:29:51', 0.00, 0.00, 'test Discount Reason ', '05:54:04', '2021-05-09'),
+(22, 22, 77, '2021-05-04', '14:53:12', 0.00, 0.00, 'test Discount Reason ', '04:54:04', '2021-05-20'),
+(23, 0, 103, '2021-05-13', '14:53:45', 0.00, 0.00, 'test Discount Reason ', '04:54:04', '2021-05-12'),
+(24, 43, 91, '2021-05-06', '15:19:16', 0.00, 0.00, 'test Discount Reason ', '06:54:04', '2021-05-16'),
+(25, 56, 110, '2021-05-16', '09:44:13', 0.00, 0.00, 'test Discount Reason ', '06:54:04', '2021-05-10'),
+(26, 40, 79, '2021-05-03', '15:12:42', 0.00, 0.00, 'test Discount Reason ', '09:54:04', '2021-05-20'),
+(27, 22, 80, '2021-05-09', '09:44:21', 0.00, 0.00, 'test Discount Reason ', '13:54:04', '2021-05-20'),
+(28, 22, 81, '2021-05-06', '09:52:34', 0.00, 0.00, 'test Discount Reason ', '08:54:04', '2021-05-18'),
+(29, 22, 82, '2021-05-14', '15:10:46', 0.00, 0.00, 'test Discount Reason ', '03:54:04', '2021-05-21'),
+(30, 44, 111, '2021-05-08', '09:06:39', 0.00, 0.00, 'test Discount Reason ', '05:54:04', '2021-05-15'),
+(31, 44, 112, '2021-05-07', '09:47:26', 0.00, 0.00, 'test Discount Reason ', '01:54:04', '2021-05-16'),
+(32, 7, 113, '2021-05-09', '09:57:00', 0.00, 0.00, 'test Discount Reason ', '03:54:04', '2021-05-14'),
+(33, 7, 114, '2021-05-07', '10:02:46', 0.00, 0.00, 'test Discount Reason ', '12:54:04', '2021-05-14'),
+(34, 7, 116, '2021-05-07', '10:11:49', 0.00, 0.00, 'test Discount Reason ', '09:54:04', '2021-05-19'),
+(35, 7, 117, '2021-05-11', '12:03:12', 0.00, 0.00, 'test Discount Reason ', '08:54:04', '2021-05-17'),
+(36, 9, 118, '2021-05-16', '13:20:28', 0.00, 0.00, 'test Discount Reason ', '13:54:04', '2021-05-18'),
+(37, 56, 119, '2021-05-16', '03:26:19', 0.00, 0.00, 'test Discount Reason ', '10:54:04', '2021-05-16'),
+(38, 57, 120, '2021-05-03', '21:13:33', 0.00, 0.00, 'test Discount Reason ', '13:54:04', '2021-05-20');
 
 -- --------------------------------------------------------
 
@@ -450,12 +451,8 @@ INSERT INTO `department` (`departmentid`, `departmentname`, `description`, `stat
 (18, 'Pharmacy', 'Providing patients with medicines prescribed by specialist physicians', 'Active'),
 (19, 'Laboratory and Blood bank', 'Includes detailed lab investigations and blood bank are developing considerably as per international standards  ', 'Active'),
 (20, 'Physiotherapy', 'Includes services to specialized clinic inpatients who are referred by hospital physicians or primary health care clinics.', 'Active'),
-(22, 'zczcz', 'sfdsf', ''),
 (25, 'physician', 'All type', ''),
-(41, '', '', 'active'),
-(42, 'physician11', 'aaaaaaaa', 'active'),
-(43, 'shricharan', 'alva', 'active'),
-(44, '', '', '');
+(45, 'Test', 'Test', 'Active');
 
 -- --------------------------------------------------------
 
@@ -481,20 +478,11 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`doctorid`, `doctorname`, `mobileno`, `departmentid`, `loginid`, `password`, `status`, `education`, `experience`, `consultancy_charge`) VALUES
-(35, 'Lokesh Kumar Chopra', '9812453678', 11, 'doctor', '123456789', 'Active', 'MBBS,MD,IDCCM', 7.0, 700.00),
-(36, 'Sandeep H S', '8966643980', 12, 'doctor1', '123456789', 'Active', 'MBBS,MD', 5.0, 500.00),
-(37, 'Shivshankar', '7894561230', 13, 'doctor2', '123456789', 'Active', 'MBBS,DNB(ORTHO)', 9.0, 300.00),
-(38, 'Ranjan kumar', '9874561230', 14, 'doctor3', '123456789', 'Active', 'MBBS,DLO,DNB', 4.0, 200.00),
-(39, 'Divya', '8756332456', 15, 'doctor4', '123456789', 'Active', 'MBBS,DNB', 5.0, 250.00),
-(40, 'Rashmi', '9876543210', 16, 'doctor5', '123456789', 'Active', 'MBBS,MD', 7.0, 150.00),
-(41, 'chaitra', '8785674654', 17, 'doctor6', '123456789', 'Active', 'MBBS,DA', 5.0, 100.00),
-(42, 'kamala bhat', '9216549870', 18, 'doctor7', '123456789', 'Active', 'MBBS', 4.0, 250.00),
-(43, 'Raam', '9008713415', 19, 'doctor8', '123456789', 'Active', 'MBBS', 5.0, 122.00),
-(44, 'Sai kiran', '8548874216', 20, 'doctor9', '123456789', 'Active', 'BAMS', 5.0, 50.00),
-(45, 'Mahesh', '9985633225', 11, 'maheshkrishna', '123456789', 'Active', 'MBBS', 5.0, 200.00),
-(46, 'Rupesh kumar', '889655884', 12, 'rupesh', '123456789', 'Active', 'MBBS', 5.0, 250.00),
-(47, 'Parthiv patel', '99855896633', 12, 'parthiv', '77896541230', 'Active', 'MBBS', 7.0, 600.00),
-(61, 'vidya', '986555566', 5, '8553507260', '876867888', 'active', 'ufyhfhjkl', 3.0, 3.00);
+(35, 'Ram Kumar Thapa', '1234567890', 11, 'doctor', '123456789', 'Active', 'MBBS,MD,IDCCM', 7.0, 700.00),
+(36, 'Biraj KC', '1234567890', 12, 'doctor1', '123456789', 'Active', 'MBBS,MD', 5.0, 500.00),
+(37, 'Pukar Chhetri', '1234567890', 13, 'doctor2', '123456789', 'Active', 'MBBS,DNB(ORTHO)', 9.0, 300.00),
+(38, 'Dinesh Bogati', '1234567890', 14, 'doctor3', '123456789', 'Active', 'MBBS,DLO,DNB', 4.0, 200.00),
+(39, 'Prakriti Budathoki', '1234567890', 15, 'doctor4', '123456789', 'Active', 'MBBS,DNB', 5.0, 250.00);
 
 -- --------------------------------------------------------
 
@@ -516,21 +504,21 @@ CREATE TABLE `doctor_timings` (
 --
 
 INSERT INTO `doctor_timings` (`doctor_timings_id`, `doctorid`, `start_time`, `end_time`, `available_day`, `status`) VALUES
-(17, 35, '09:30:00', '13:00:00', '', 'Active'),
-(18, 36, '13:30:00', '17:00:00', '', 'Active'),
-(19, 37, '14:00:00', '18:00:00', '', 'Active'),
-(20, 38, '17:00:00', '21:00:00', '', 'Active'),
-(21, 39, '13:00:00', '19:00:00', '', 'Active'),
-(22, 40, '07:00:00', '11:00:00', '', 'Active'),
-(23, 41, '13:30:00', '16:30:00', '', 'Active'),
-(24, 42, '11:30:00', '14:30:00', '', 'Active'),
-(25, 43, '12:30:00', '16:30:00', '', 'Active'),
-(26, 44, '21:30:00', '12:30:00', '', 'Active'),
-(27, 36, '01:03:00', '13:03:00', '', 'Active'),
-(28, 61, '11:11:00', '19:07:00', '', 'Active'),
-(29, 35, '11:11:00', '16:44:00', '', 'Active'),
-(30, 35, '01:10:00', '16:11:00', '', 'Active'),
-(31, 35, '01:02:00', '15:04:00', '2018-03-26', 'Active');
+(17, 35, '09:30:00', '13:00:00', '2021-03-26', 'Active'),
+(18, 36, '13:30:00', '17:00:00', '2021-03-26', 'Active'),
+(19, 37, '14:00:00', '18:00:00', '2021-03-26', 'Active'),
+(20, 38, '17:00:00', '21:00:00', '2021-03-26', 'Active'),
+(21, 39, '13:00:00', '19:00:00', '2021-03-26', 'Active'),
+(22, 40, '07:00:00', '11:00:00', '2021-03-26', 'Active'),
+(23, 41, '13:30:00', '16:30:00', '2021-03-26', 'Active'),
+(24, 42, '11:30:00', '14:30:00', '2021-03-26', 'Active'),
+(25, 43, '12:30:00', '16:30:00', '2021-03-26', 'Active'),
+(26, 44, '21:30:00', '12:30:00', '2021-03-26', 'Active'),
+(27, 36, '01:03:00', '13:03:00', '2021-03-26', 'Active'),
+(28, 61, '11:11:00', '19:07:00', '2021-03-26', 'Active'),
+(29, 35, '11:11:00', '16:44:00', '2021-03-26', 'Active'),
+(30, 35, '01:10:00', '16:11:00', '2021-03-26', 'Active'),
+(31, 35, '01:02:00', '15:04:00', '2021-03-26', 'Active');
 
 -- --------------------------------------------------------
 
@@ -551,11 +539,10 @@ CREATE TABLE `medicine` (
 --
 
 INSERT INTO `medicine` (`medicineid`, `medicinename`, `medicinecost`, `description`, `status`) VALUES
-(1, 'ABC', 20.00, 'test abc', 'Active'),
-(3, 'xtz', 25.00, 'test abc', 'Active'),
-(4, 'NYX', 50.00, 'test abc', 'Active'),
-(5, 'Colpol', 30.00, 'test abc', 'Active'),
-(6, 'vvvv', 50.00, 'hnghng', 'Active');
+(1, 'medidine 1', 20.00, 'test abc', 'Active'),
+(3, 'medicine 2', 25.00, 'test abc', 'Active'),
+(4, 'medicine 3', 50.00, 'test abc', 'Active'),
+(5, 'medicine 5', 30.00, 'test abc', 'Active');
 
 -- --------------------------------------------------------
 
@@ -586,44 +573,28 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`orderid`, `patientid`, `doctorid`, `prescriptionid`, `orderdate`, `deliverydate`, `address`, `mobileno`, `note`, `status`, `payment_type`, `card_no`, `cvv_no`, `expdate`, `card_holder`) VALUES
-(17, 7, 0, 0, '2016-03-01', '2016-03-05', ' shivajinagar, Ujire', '9874561230', '', 'Active', '', '', '', '0000-00-00', ''),
-(18, 9, 0, 0, '2016-03-03', '2016-03-25', ' Bajpe', '8785674625', '', 'Active', '', '', '', '0000-00-00', ''),
-(19, 22, 0, 0, '2016-03-15', '2016-03-26', ' Kadri, Mangalore', '8756332456', '', 'Active', '', '', '', '0000-00-00', ''),
-(20, 23, 0, 0, '2016-03-07', '2016-03-10', ' Perla, Ujire', '9449443117', '', 'Active', '', '', '', '0000-00-00', ''),
-(21, 36, 0, 0, '2016-03-16', '2016-03-22', ' Ujire', '9449678831', '', 'Active', '', '', '', '0000-00-00', ''),
-(22, 36, 0, 72, '0000-00-00', '2018-04-03', '3rd floor, city light buildin ', '8874563210', '', 'Active', '', '', '', '0000-00-00', ''),
-(23, 48, 0, 73, '0000-00-00', '2018-03-27', '3rd floor, city light buildin ', '8874563210', ' Kindly send the medicines as soon as possible', 'Active', '', '', '', '0000-00-00', ''),
-(24, 48, 0, 0, '2016-03-27', '2018-03-17', '3rd floor, city light buildin ', '8874563210', ' Kindly send the medicines as soon as possible', 'Pending', '', '', '', '0000-00-00', ''),
-(25, 48, 37, 32, '2016-03-27', '2016-03-27', '3rd floor, city light buildin ', '8874563210', ' Test note send ', 'Active', '', '', '', '0000-00-00', ''),
-(26, 48, 37, 33, '2016-03-27', '2016-03-27', '3rd floor, city light buildin ', '8874563210', ' Test note send ', 'Active', '', '', '', '0000-00-00', ''),
-(27, 48, 37, 35, '2016-03-27', '2016-03-27', '3rd floor, city light buildin ', '8874563210', ' Test note send ', 'Active', '', '', '', '0000-00-00', ''),
-(28, 7, 35, 56, '0000-00-00', '2018-03-17', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' xxx', 'Active', '', '', '', '0000-00-00', ''),
-(29, 7, 35, 58, '2018-03-19', '2018-03-21', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' xxx', 'Active', '', '', '', '0000-00-00', ''),
-(30, 7, 35, 59, '2018-03-21', '2018-03-27', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' trfrbgb', 'Active', '', '', '', '0000-00-00', ''),
-(31, 22, 35, 44, '2018-03-27', '2018-03-28', '  kuvempu nagar ', '8756332456', ' hhhhh', 'Active', '', '', '', '0000-00-00', ''),
-(32, 7, 35, 45, '2018-03-28', '2018-03-28', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' fffff', 'Active', '', '', '', '0000-00-00', ''),
-(33, 41, 35, 47, '2018-03-30', '2018-03-31', '34rd floor ', '78978978979', ' hiiiii', 'Delivered', '', '', '', '0000-00-00', ''),
-(34, 41, 35, 67, '2018-03-31', '0000-00-00', '34rd floor ', '78978978979', ' Kindly provide prescription', 'Active', '', '', '', '0000-00-00', ''),
-(35, 41, 36, 57, '2018-03-31', '2018-03-31', '34rd floor ', '78978978979', ' tt', 'Delivered', '', '', '', '0000-00-00', ''),
-(36, 7, 35, 62, '2018-03-31', '0000-00-00', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' mmmm', 'Active', '', '', '', '0000-00-00', ''),
-(37, 7, 35, 65, '2018-04-03', '2018-04-03', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' vvvv', 'Delivered', '', '', '', '0000-00-00', ''),
-(38, 7, 0, 71, '2018-04-03', '2018-04-03', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' ddd', 'Delivered', '', '', '', '0000-00-00', ''),
-(39, 7, 0, 0, '2018-04-03', '0000-00-00', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' vvvvv', 'Pending', '', '', '', '0000-00-00', ''),
-(40, 7, 0, 75, '2018-04-03', '0000-00-00', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' kkkk', 'Pending', '', '', '', '0000-00-00', ''),
-(41, 7, 0, 74, '2018-04-03', '0000-00-00', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' lbbnbjbj', 'Pending', '', '', '', '0000-00-00', ''),
-(42, 7, 0, 90, '2018-04-06', '0000-00-00', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' gggg', 'Pending', '', '', '', '0000-00-00', ''),
-(43, 7, 0, 83, '2018-04-06', '2018-04-06', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' zzzzzz', 'Delivered', '', '', '', '0000-00-00', ''),
-(44, 7, 0, 82, '2018-04-06', '2018-04-06', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' vvvvvvvvvv', 'Delivered', '', '', '', '0000-00-00', ''),
-(45, 7, 35, 84, '2018-04-06', '0000-00-00', ' manjunath nilaya\r\nperla road\r\nujire ', '9874561230', ' nmmmm', 'Pending', '', '', '', '0000-00-00', ''),
-(46, 52, 35, 85, '2018-04-06', '2018-04-07', 'sachin ', '966555665', ' zz', 'Delivered', '', '', '', '0000-00-00', ''),
-(47, 53, 35, 87, '2018-04-07', '2018-04-07', 'puttur ', '1234512345', ' Kindly send me prescription', 'Delivered', '', '', '', '0000-00-00', ''),
-(48, 52, 35, 88, '2018-04-07', '2018-04-07', 'sachin ', '966555665', ' ffff', 'Delivered', '', '', '', '0000-00-00', ''),
-(50, 22, 35, 91, '2018-04-08', '2018-04-08', '  kuvempu nagar ', '8756332456', ' test', 'Delivered', 'CREDIT CARD', '1231231231231231', '254', '2018-05-01', 'Raj kiran'),
-(51, 22, 35, 92, '2018-04-08', '0000-00-00', '  kuvempu nagar ', '8756332456', ' please deliver it', 'Paid', 'VISA', '1231231231231232', '232', '2018-04-01', 'Raj kiran'),
-(52, 22, 35, 94, '2018-04-08', '0000-00-00', '  kuvempu nagar ', '8756332456', ' te', 'Pending', '', '', '', '0000-00-00', ''),
-(53, 22, 35, 95, '2018-04-08', '0000-00-00', '  kuvempu nagar ', '8756332456', ' test', 'Pending', '', '', '', '0000-00-00', ''),
-(54, 22, 35, 96, '2018-04-08', '2018-04-08', '  kuvempu nagar ', '8756332456', ' ttest', 'Delivered', 'VISA', '1234567890123456', '122', '2018-04-01', 'Raj kiran'),
-(55, 22, 35, 97, '2018-04-08', '2018-04-08', '  kuvempu nagar ', '8756332456', ' helllo', 'Delivered', 'DEBIT CARD', '2178945612345678', '457', '2019-01-01', 'Raj kiran');
+(17, 7, 0, 0, '2021-05-23', '2021-05-25', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'DEBIT CARD', '1234567899776543232', '354', '2021-05-15', 'Name 1'),
+(18, 9, 0, 0, '2021-05-15', '2021-05-17', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'CREDIT CARD', '1234567899776543232', '354', '2021-05-22', 'Name 1'),
+(19, 22, 0, 0, '2021-05-20', '2021-05-25', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'VISA', '1234567899776543232', '354', '2021-05-24', 'Name 1'),
+(20, 23, 0, 0, '2021-05-19', '2021-05-20', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'DEBIT CARD', '1234567899776543232', '354', '2021-05-14', 'Name 1'),
+(21, 36, 0, 0, '2021-05-24', '2021-05-13', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'VISA', '1234567899776543232', '354', '2021-05-14', 'Name 1'),
+(22, 36, 0, 72, '2021-05-21', '2021-05-23', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'CREDIT CARD', '1234567899776543232', '354', '2021-05-17', 'Name 1'),
+(23, 48, 0, 73, '2021-05-24', '2021-05-22', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'DEBIT CARD', '1234567899776543232', '354', '2021-05-18', 'Name 1'),
+(24, 48, 0, 0, '2021-05-14', '2021-05-15', 'Kathmandu', '1234567890', 'Test Notes', 'Pending', 'CREDIT CARD', '1234567899776543232', '354', '2021-05-13', 'Name 1'),
+(25, 48, 37, 32, '2021-05-17', '2021-05-12', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'VISA', '1234567899776543232', '354', '2021-05-12', 'Name 1'),
+(26, 48, 37, 33, '2021-05-18', '2021-05-17', 'Kathmandu', '1234567890', 'Test Notes', 'Active', '', '1234567899776543232', '354', '2021-05-12', 'Name 1'),
+(27, 48, 37, 35, '2021-05-13', '2021-05-25', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'CREDIT CARD', '1234567899776543232', '354', '2021-05-12', 'Name 1'),
+(28, 7, 35, 56, '2021-05-14', '2021-05-18', 'Kathmandu', '1234567890', 'Test Notes', 'Active', '', '1234567899776543232', '354', '2021-05-12', 'Name 1'),
+(29, 7, 35, 58, '2021-05-19', '2021-05-17', 'Kathmandu', '1234567890', 'Test Notes', 'Active', '', '1234567899776543232', '354', '2021-05-12', 'Name 1'),
+(30, 7, 35, 59, '2021-05-14', '2021-05-22', 'Kathmandu', '1234567890', 'Test Notes', 'Active', 'VISA', '1234567899776543232', '354', '2021-05-25', 'Name 1'),
+(31, 22, 35, 44, '2021-05-15', '2021-05-17', 'Kathmandu', '1234567890', 'Test Notes', 'Active', '', '1234567899776543232', '354', '2021-05-25', 'Name 1'),
+(32, 7, 35, 45, '2021-05-22', '2021-05-21', 'Kathmandu', '1234567890', 'Test Notes', 'Active', '', '1234567899776543232', '354', '2021-05-23', 'Name 1'),
+(33, 41, 35, 47, '2021-05-13', '2021-05-14', 'Kathmandu', '1234567890', 'Test Notes', 'Delivered', '', '1234567899776543232', '354', '2021-05-14', 'Name 1'),
+(36, 7, 35, 62, '2021-05-15', '2021-05-23', 'Kathmandu', '1234567890', 'Test Notes', 'Active', '', '1234567899776543232', '354', '2021-05-18', 'Name 1'),
+(38, 7, 0, 71, '2021-05-22', '2021-05-21', 'Kathmandu', '1234567890', 'Test Notes', 'Delivered', '', '1234567899776543232', '354', '2021-05-21', 'Name 1'),
+(40, 7, 0, 75, '2021-05-14', '2021-05-12', 'Kathmandu', '1234567890', 'Test Notes', 'Pending', '', '1234567899776543232', '354', '2021-05-14', 'Name 1'),
+(42, 7, 0, 90, '2021-05-18', '2021-05-12', 'Kathmandu', '1234567890', 'Test Notes', 'Pending', '', '1234567899776543232', '354', '2021-05-22', 'Name 1'),
+(43, 7, 0, 83, '2021-05-12', '2021-05-25', 'Kathmandu', '1234567890', 'Test Notes', 'Delivered', 'VISA', '1234567899776543232', '354', '2021-05-15', 'Name 1');
 
 -- --------------------------------------------------------
 
@@ -653,30 +624,14 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`patientid`, `patientname`, `admissiondate`, `admissiontime`, `address`, `mobileno`, `city`, `pincode`, `loginid`, `password`, `bloodgroup`, `gender`, `dob`, `status`) VALUES
-(7, 'mangala', '2021-05-06', '12:00:00', ' manjunath nilaya\r\nperla road\r\nujire', '98732230', 'belthangady', '542752', '14', '123456789', 'B+', 'FEMALE', '1990-02-08', 'Active'),
-(9, 'manoj', '2021-05-16', '12:30:00', ' mahadevi temple bc road', '8785674625', 'Banglore', '564892', '15', '123456789', 'O+', 'MALE', '1994-05-11', 'Active'),
-(22, 'kavitha', '2021-05-03', '01:21:00', '  kuvempu nagar', '8756332456', 'Banglore', '577234', 'shricharanalva971', 'shricharanalva97', 'B+', 'FEMALE', '2016-03-10', 'Active'),
-(23, 'paramesh', '2021-05-08', '05:07:00', ' Janakal', '9449443117', 'Hosadurga', '577527', '13', '123456789', 'B+', 'MALE', '1963-06-01', 'Active'),
-(36, 'thanuja K B', '2021-05-13', '01:30:00', ' chitradurga', '9449678831', 'hosdurga', '577527', '12', '123456789', 'AB+', 'FEMALE', '1995-12-19', 'Active'),
-(40, 'mahesh', '2021-05-13', '13:00:00', 'vijyapura', '951234785', 'Banglore', '547147', '16', '123456789', 'AB+', 'MALE', '1995-06-21', 'Active'),
-(41, 'Raj kiran', '2021-05-09', '00:00:00', '34rd floor', '78978978979', 'Manglaore', '53535', 'nandhini', '123456789', '', 'Male', '2016-12-31', 'Active'),
-(42, 'ydtyfu', '2021-05-15', '00:00:00', 'chgf', '76767574', 'utdff', '35353', 'yu7', 'sytrfyhfyj', '', 'Male', '1996-07-17', 'Active'),
-(43, 'Mahesh prasad', '2021-05-05', '00:00:00', '3rd floor, city light', '07789654123', 'Mangalore', '53535', 'mahesh', '123456789', '', 'Male', '2004-12-31', 'Active'),
-(44, 'Raj guru', '2021-05-04', '08:17:55', '5th floor, city light building', '889665477', 'Mumbai', '35353', 'rajguru', '123456789', '', 'Male', '2022-12-31', 'Active'),
-(45, 'Pter king', '2021-05-04', '08:50:46', 'skhourse, vinagar', '07789654123', 'puttur', '575001', 'peter', '123456789', 'A+', 'MALE', '2008-12-31', 'Active'),
-(46, 'jeevan', '2021-05-06', '08:53:44', '4th cross, ml road', '7894561230', 'Bangalore', '456789', 'jeevan', '123123123', 'A-', 'MALE', '2015-12-31', 'Active'),
-(47, 'jeevan', '2021-05-16', '08:55:15', '4th cross, ml road', '7894561230', 'Bangalore', '456789', 'jeevana', '556677123', 'A-', 'MALE', '2015-12-31', 'Active'),
-(48, 'Prakash', '2021-05-15', '09:59:36', '3rd floor, city light buildin', '8874563210', 'Mangalore', '584556', 'prakash', '123456789', 'A+', 'MALE', '2016-03-25', 'Active'),
-(50, 'shri', '2021-05-13', '13:28:33', 'Bangalore', '8553507260', 'Mangalore', '53535', 'shri', 'shricharan', '', 'Male', '2018-02-04', 'Active'),
-(51, 'aravind', '2021-05-16', '00:00:00', 'Mangalore', '8764654651', 'Mangalore', '66567', 'ara@gmail.com', '123456789', 'A+', 'MALE', '2018-01-30', 'Active'),
-(52, 'sachin', '2021-05-13', '00:00:00', 'sachin', '966555665', 'Mangalore', '66567', '11', '123456789', 'A+', 'MALE', '2018-02-01', 'Active'),
-(53, 'shri', '2021-05-11', '15:58:07', 'puttur', '1234512345', 'puttur', '', '8553507260', '9148167875', '', 'Male', '2018-01-10', 'Active'),
-(54, 'Raj kiran', '2021-05-03', '00:00:00', '3rd floor city light building', '9987456332', 'mangalore', '575002', 'rajkiran', '123456789', 'A+', '', '2010-03-02', 'Active'),
-(55, 'Mahesh kiran', '2021-05-06', '15:12:37', '3rd floor', '7894561230', 'Mangalore', '574899', '123456789', '123456789', 'B+', 'MALE', '2002-11-30', 'Active'),
-(56, 'xxxx', '2021-05-03', '09:39:10', 'yyyy', '9677767676', 'uuuu', '35353', 'qqqqq', '1111111111', '', 'Male', '2015-02-11', 'Active'),
-(57, 'Peter king', '2021-05-08', '21:07:50', 'st house,\r\nsunkadakatte,\r\nbangalore', '88569525445', 'Bangalore', '575002', 'peterking', 'q1w2e3r4/', 'A+', 'MALE', '1978-07-11', 'Active'),
-(58, 'patient', '2021-05-15', '10:00:41', 'patient', '1234', 'patient', '1234', 'patient1', 'patient1234', 'o', 'male', '2013-05-16', 'test'),
-(59, 'test', '2021-05-07', '09:18:37', 'test', '123', 'test', '123', 'test', 'test1234', 'A-', 'MALE', '1997-07-23', 'Active');
+(43, 'Patient Name', '2021-05-05', '00:00:00', 'Kathmandu', '1234561234', 'Kathmandu', '53535', 'user7', '123456789', '', 'Male', '2004-12-31', 'Active'),
+(44, 'Patient Name', '2021-05-04', '08:17:55', 'Kathmandu', '1234561234', 'Kathmandu', '35353', 'user6', '123456789', '', 'Male', '2022-12-31', 'Active'),
+(45, 'Patient Name', '2021-05-04', '08:50:46', 'Kathmandu', '1234561234', 'Kathmandu', '575001', 'user5', '123456789', 'A+', 'MALE', '2008-12-31', 'Active'),
+(46, 'Patient Name', '2021-05-06', '08:53:44', 'Kathmandu', '1234561234', 'Kathmandu', '456789', 'user4', '123123123', 'A-', 'MALE', '2015-12-31', 'Active'),
+(47, 'Patient Name', '2021-05-16', '08:55:15', 'Kathmandu', '1234561234', 'Kathmandu', '456789', 'user3', '556677123', 'A-', 'MALE', '2015-12-31', 'Active'),
+(52, 'Patient Name', '2021-05-13', '00:00:00', 'Kathmandu', '1234561234', 'Kathmandu', '66567', 'user2', '123456789', 'A+', 'MALE', '2018-02-01', 'Active'),
+(53, 'Patient Name', '2021-05-11', '15:58:07', 'Kathmandu', '1234561234', 'Kathmandu', '', 'uesr1', '9148167875', '', 'Male', '2018-01-10', 'Active'),
+(54, 'Patient Name', '2021-05-03', '00:00:00', 'Kathmandu', '1234561234', 'Kathmandu', '575002', 'user', '123456789', 'A+', 'Female', '2010-03-02', 'Active');
 
 -- --------------------------------------------------------
 
@@ -1066,10 +1021,10 @@ CREATE TABLE `treatment` (
 INSERT INTO `treatment` (`treatmentid`, `treatmenttype`, `treatment_cost`, `note`, `status`) VALUES
 (13, 'Treatment for Malaria', '450.00', ' Providing medicine and tonic with injection  ', 'Active'),
 (14, 'Treatment for Dengue', '20000.00', ' Providing massage and home made tips', 'Active'),
-(15, 'tryrtytyt', '554.00', ' ertrrcyt', 'Active'),
-(16, 'rytyt', '55.00', ' eex', 'Active'),
-(17, 'jkgjghj', '5653.00', ' hfhfjhg', 'Active'),
-(18, 'rhgjh', '54.00', ' hgjgj ', 'Active'),
+(15, 'test', '554.00', ' Treatment note', 'Active'),
+(16, 'test', '55.00', ' Treatment note', 'Active'),
+(17, 'test', '5653.00', ' Treatment note', 'Active'),
+(18, 'Treanment Gastritis', '54.00', 'Pantroprazol', 'Active'),
 (19, 'Dengue', '4000.00', 'Dengue treatment', 'Active');
 
 -- --------------------------------------------------------
@@ -1145,30 +1100,6 @@ INSERT INTO `treatment_records` (`treatment_records_id`, `treatmentid`, `appoint
 (57, 13, 117, 7, 35, 'gbgv', '2002948154KHADI JACKETS .jpg', '2018-04-04', '01:02:00', 'Active'),
 (58, 13, 119, 56, 35, 'mm', '430203084KHADI JACKETS .jpg', '2018-04-06', '02:02:00', 'Active'),
 (59, 14, 120, 57, 35, 'Treatment given for dengue fever', '29112image011.png', '2018-07-12', '01:00:00', 'Active');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
-
-CREATE TABLE `user` (
-  `userid` int(11) NOT NULL,
-  `loginname` varchar(50) NOT NULL,
-  `password` varchar(10) NOT NULL,
-  `patientname` varchar(50) NOT NULL,
-  `mobileno` varchar(15) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `createddateandtime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`userid`, `loginname`, `password`, `patientname`, `mobileno`, `email`, `createddateandtime`) VALUES
-(1, 'admin', 'admin', 'admin', '', '', '2017-12-14 11:21:45'),
-(2, 'user', 'user1234', 'user', '9812', 'user@mail.com', '2021-05-12 12:59:26');
 
 --
 -- Indexes for dumped tables
@@ -1279,12 +1210,6 @@ ALTER TABLE `treatment_records`
   ADD PRIMARY KEY (`treatment_records_id`);
 
 --
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`userid`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -1298,7 +1223,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `appointmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=122;
+  MODIFY `appointmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- AUTO_INCREMENT for table `billing`
@@ -1316,7 +1241,7 @@ ALTER TABLE `billing_records`
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `departmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `departmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `doctor`
@@ -1389,12 +1314,6 @@ ALTER TABLE `treatment`
 --
 ALTER TABLE `treatment_records`
   MODIFY `treatment_records_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `userid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

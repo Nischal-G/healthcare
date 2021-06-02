@@ -199,7 +199,7 @@ include("headers.php");
 			    <div class="bodyheader">
 			      <div class="count">
 			      	<?php
-						$sql = "SELECT * FROM doctor_timings WHERE status='Active'";
+						$sql = "SELECT * FROM doctor WHERE status='Active'";
 						$qsql = mysqli_query($con,$sql);
 						echo mysqli_num_rows($qsql);
 						?>

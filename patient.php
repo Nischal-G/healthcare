@@ -50,7 +50,8 @@ if(isset($_GET[editid]))
 <div class="wrapper col2">
   <div id="breadcrumb">
     <ul>
-      <li class="first">Add New Patient</li></ul>
+      <!-- <li class="first">Add New Patient</li> -->
+  </ul>
   </div>
 </div>
 <div class="wrapper col4">

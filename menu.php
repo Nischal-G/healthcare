@@ -172,7 +172,7 @@ if(isset($_SESSION[adminid]))
 {
 ?>
 <div id="mmenu">
-<li><a href="adminaccount.php">Account</a></li>
+<li><a href="dashboard.php">Account</a></li>
 <li>
 <a href="#">Profile</a>
     <ul>
