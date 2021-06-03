@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2021 at 12:01 PM
+-- Generation Time: Jun 03, 2021 at 06:41 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.1.32
 
@@ -69,12 +69,12 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`appointmentid`, `appointmenttype`, `patientid`, `roomid`, `departmentid`, `appointmentdate`, `appointmenttime`, `doctorid`, `status`, `app_reason`) VALUES
-(44, 'Online', 22, 15, 13, '2021-05-05', '14:03:00', 41, 'Approved', 'This is test appoitnment'),
-(48, 'Online', 22, 0, 0, '2021-05-08', '17:46:00', 0, 'Approved', 'This is test appoitnment'),
-(50, 'Offline', 7, 0, 0, '2021-05-05', '16:05:00', 0, 'Approved', 'This is test appoitnment'),
+(44, 'Online', 22, 15, 13, '2021-05-05', '14:03:00', 37, 'Approved', 'This is test appoitnment'),
+(48, 'Online', 22, 0, 0, '2021-05-08', '17:46:00', 38, 'Approved', 'This is test appoitnment'),
+(50, 'Offline', 7, 0, 0, '2021-05-05', '16:05:00', 39, 'Approved', 'This is test appoitnment'),
 (51, 'Online', 9, 15, 12, '2021-05-13', '15:04:00', 37, 'Approved', 'This is test appoitnment'),
-(53, 'Online', 0, 15, 14, '2021-05-08', '23:58:00', 42, '', 'This is test appoitnment'),
-(56, 'Online', 22, 15, 11, '2021-05-12', '00:00:00', 43, 'Approved', 'This is test appoitnment'),
+(53, 'Online', 0, 15, 14, '2021-05-08', '23:58:00', 36, '', 'This is test appoitnment'),
+(56, 'Online', 22, 15, 11, '2021-05-12', '00:00:00', 39, 'Approved', 'This is test appoitnment'),
 (57, 'Online', 0, 15, 13, '2021-05-04', '23:58:00', 37, '', 'This is test appoitnment'),
 (58, 'Out Patient', 22, 18, 14, '2021-05-12', '12:59:00', 37, 'Approved', 'This is test appoitnment'),
 (60, 'Online', 37, 16, 16, '2021-05-16', '12:00:00', 42, 'Approved', 'This is test appoitnment'),
@@ -97,7 +97,7 @@ INSERT INTO `appointment` (`appointmentid`, `appointmenttype`, `patientid`, `roo
 (80, 'Out Patient', 22, 0, 11, '2021-05-03', '00:00:00', 45, 'Approved', 'This is test appoitnment'),
 (81, 'Out Patient', 22, 15, 13, '2021-05-08', '02:00:00', 37, 'Approved', 'This is test appoitnment'),
 (82, 'Out Patient', 22, 16, 11, '2021-05-15', '02:00:00', 35, 'Approved', 'This is test appoitnment'),
-(83, 'ONLINE', 22, 0, 12, '2021-05-05', '02:00:00', 0, 'Pending', 'This is test appoitnment'),
+(83, '', 22, 0, 12, '2021-05-05', '02:00:00', 0, 'Approved', 'This is test appoitnment'),
 (84, '', 0, 0, 11, '2021-05-08', '12:59:00', 39, 'Approved', 'This is test appoitnment'),
 (85, 'ONLINE', 0, 0, 11, '2021-05-06', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
 (86, 'ONLINE', 0, 0, 11, '2021-05-04', '12:59:00', 0, 'Pending', 'This is test appoitnment'),
@@ -136,8 +136,17 @@ INSERT INTO `appointment` (`appointmentid`, `appointmenttype`, `patientid`, `roo
 (119, 'Out Patient', 56, 0, 11, '2021-05-09', '03:02:00', 35, 'Approved', 'This is test appoitnment'),
 (120, '', 57, 0, 11, '2021-05-14', '09:00:00', 35, 'Approved', 'This is test appoitnment'),
 (121, '', 59, 0, 17, '2021-05-11', '13:07:00', 41, 'Active', 'This is test appoitnment'),
-(122, 'ONLINE', 43, 0, 15, '2021-06-01', '11:43:00', 39, 'Pending', 'test'),
-(123, 'ONLINE', 45, 0, 11, '0000-00-00', '00:00:00', 35, 'Pending', '');
+(122, '', 43, 0, 15, '2021-06-01', '11:43:00', 36, 'Approved', 'test'),
+(123, 'ONLINE', 45, 0, 11, '0000-00-00', '00:00:00', 35, 'Pending', ''),
+(124, '', 43, 0, 11, '2021-06-10', '13:53:00', 35, 'Active', 'test'),
+(125, '', 60, 0, 12, '2021-06-10', '14:13:00', 36, 'Approved', 'test'),
+(126, '', 60, 0, 11, '2021-06-18', '14:28:00', 0, 'Approved', 'tst'),
+(127, '', 62, 0, 11, '2021-06-12', '19:31:00', 35, 'Approved', 'dfdf'),
+(128, 'ONLINE', 64, 0, 12, '2021-06-03', '20:30:00', 62, 'Pending', 'test'),
+(129, '', 65, 0, 11, '2021-06-03', '20:46:00', 35, 'Approved', 'pat'),
+(130, 'ONLINE', 65, 0, 12, '2021-06-10', '20:51:00', 36, 'Pending', 'g'),
+(131, '', 63, 0, 11, '2021-06-10', '20:54:00', 35, 'Approved', 'g'),
+(132, '', 66, 0, 11, '2021-06-16', '21:19:00', 35, 'Approved', 'b');
 
 -- --------------------------------------------------------
 
@@ -196,7 +205,15 @@ INSERT INTO `billing` (`billingid`, `patientid`, `appointmentid`, `billingdate`,
 (35, 7, 117, '2021-05-11', '12:03:12', 0.00, 0.00, 'test Discount Reason ', '08:54:04', '2021-05-17'),
 (36, 9, 118, '2021-05-16', '13:20:28', 0.00, 0.00, 'test Discount Reason ', '13:54:04', '2021-05-18'),
 (37, 56, 119, '2021-05-16', '03:26:19', 0.00, 0.00, 'test Discount Reason ', '10:54:04', '2021-05-16'),
-(38, 57, 120, '2021-05-03', '21:13:33', 0.00, 0.00, 'test Discount Reason ', '13:54:04', '2021-05-20');
+(38, 57, 120, '2021-05-03', '21:13:33', 0.00, 0.00, 'test Discount Reason ', '13:54:04', '2021-05-20'),
+(39, 22, 83, '2021-06-03', '10:18:55', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(40, 60, 125, '2021-06-03', '10:38:05', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(41, 62, 127, '2021-06-03', '15:49:06', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(42, 60, 126, '2021-06-03', '15:52:10', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(43, 43, 124, '2021-06-03', '16:43:17', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(44, 65, 129, '2021-06-03', '17:02:15', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(45, 63, 131, '2021-06-03', '17:10:01', 0.00, 0.00, '', '00:00:00', '0000-00-00'),
+(46, 66, 132, '2021-06-03', '17:35:20', 0.00, 0.00, '', '00:00:00', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -421,7 +438,10 @@ INSERT INTO `billing_records` (`billingservice_id`, `billingid`, `bill_type_id`,
 (201, 38, 35, 'Consultancy Charge', 700.00, '2021-05-05', 'Active'),
 (202, 38, 14, 'Treatment', 20000.00, '2021-05-15', 'Active'),
 (203, 38, 98, 'Prescription Charge', 0.00, '2021-05-16', 'Active'),
-(204, 38, 99, 'Prescription Charge', 350.00, '2021-05-03', 'Active');
+(204, 38, 99, 'Prescription Charge', 350.00, '2021-05-03', 'Active'),
+(205, 45, 100, 'Prescription Charge', 0.00, '2021-06-03', 'Active'),
+(206, 45, 35, 'Consultancy Charge', 700.00, '2021-06-03', 'Active'),
+(207, 45, 14, 'Treatment', 20000.00, '2021-06-03', 'Active');
 
 -- --------------------------------------------------------
 
@@ -452,7 +472,7 @@ INSERT INTO `department` (`departmentid`, `departmentname`, `description`, `stat
 (19, 'Laboratory and Blood bank', 'Includes detailed lab investigations and blood bank are developing considerably as per international standards  ', 'Active'),
 (20, 'Physiotherapy', 'Includes services to specialized clinic inpatients who are referred by hospital physicians or primary health care clinics.', 'Active'),
 (25, 'physician', 'All type', ''),
-(45, 'Test', 'Test', 'Active');
+(46, 'test', 'test', 'Active');
 
 -- --------------------------------------------------------
 
@@ -482,7 +502,8 @@ INSERT INTO `doctor` (`doctorid`, `doctorname`, `mobileno`, `departmentid`, `log
 (36, 'Biraj KC', '1234567890', 12, 'doctor1', '123456789', 'Active', 'MBBS,MD', 5.0, 500.00),
 (37, 'Pukar Chhetri', '1234567890', 13, 'doctor2', '123456789', 'Active', 'MBBS,DNB(ORTHO)', 9.0, 300.00),
 (38, 'Dinesh Bogati', '1234567890', 14, 'doctor3', '123456789', 'Active', 'MBBS,DLO,DNB', 4.0, 200.00),
-(39, 'Prakriti Budathoki', '1234567890', 15, 'doctor4', '123456789', 'Active', 'MBBS,DNB', 5.0, 250.00);
+(39, 'Prakriti Budathoki', '1234567890', 15, 'doctor4', '123456789', 'Active', 'MBBS,DNB', 5.0, 250.00),
+(62, 'Suman Thapa', '123', 12, 'suman', '123456789', 'Active', 'MBBS', 2.0, 300.00);
 
 -- --------------------------------------------------------
 
@@ -518,7 +539,8 @@ INSERT INTO `doctor_timings` (`doctor_timings_id`, `doctorid`, `start_time`, `en
 (28, 61, '11:11:00', '19:07:00', '2021-03-26', 'Active'),
 (29, 35, '11:11:00', '16:44:00', '2021-03-26', 'Active'),
 (30, 35, '01:10:00', '16:11:00', '2021-03-26', 'Active'),
-(31, 35, '01:02:00', '15:04:00', '2021-03-26', 'Active');
+(31, 35, '01:02:00', '15:04:00', '2021-03-26', 'Active'),
+(32, 35, '09:22:00', '23:23:00', '', 'Active');
 
 -- --------------------------------------------------------
 
@@ -631,7 +653,14 @@ INSERT INTO `patient` (`patientid`, `patientname`, `admissiondate`, `admissionti
 (47, 'Patient Name', '2021-05-16', '08:55:15', 'Kathmandu', '1234561234', 'Kathmandu', '456789', 'user3', '556677123', 'A-', 'MALE', '2015-12-31', 'Active'),
 (52, 'Patient Name', '2021-05-13', '00:00:00', 'Kathmandu', '1234561234', 'Kathmandu', '66567', 'user2', '123456789', 'A+', 'MALE', '2018-02-01', 'Active'),
 (53, 'Patient Name', '2021-05-11', '15:58:07', 'Kathmandu', '1234561234', 'Kathmandu', '', 'uesr1', '9148167875', '', 'Male', '2018-01-10', 'Active'),
-(54, 'Patient Name', '2021-05-03', '00:00:00', 'Kathmandu', '1234561234', 'Kathmandu', '575002', 'user', '123456789', 'A+', 'Female', '2010-03-02', 'Active');
+(54, 'Patient Name', '2021-05-03', '00:00:00', 'Kathmandu', '1234561234', 'Kathmandu', '575002', 'user', '123456789', 'A+', 'Female', '2010-03-02', 'Active'),
+(60, 'Nischal Ghimire', '2021-06-03', '10:26:56', 'test', '44444', 'hjj', '23', 'nischal', 'nischal123', 'B+', 'MALE', '2021-06-01', 'Active'),
+(61, 'test test', '2021-06-03', '15:40:48', 'test', '212', 'sdf', '21', 'test23', '123456789', 'A+', 'MALE', '2021-06-02', 'Active'),
+(62, 'nabin ghimire', '2021-06-03', '15:44:40', 'test', '123', 'dfj', '67', 'nabin', '123456789', 'A+', 'MALE', '2021-06-02', 'Active'),
+(63, 'helo', '2021-06-03', '16:38:53', 'helo', '12', 'helo', '12', 'helo', '12345678', 'A+', 'MALE', '2010-08-12', 'Active'),
+(64, 'hhelo', '2021-06-03', '16:44:41', 'hhelo', '12', 'hhelo', '', 'hhelo', '1234567890', '', 'Male', '2021-06-02', 'Pending'),
+(65, 'pat', '2021-06-03', '17:00:32', 'ktm', '12', 'ktm', '', 'pat', '123456789', '', 'Male', '2008-02-03', 'Active'),
+(66, 'Suman Thapa', '2021-06-03', '17:28:00', 'Kathmandu, Nepal', '1234567890', 'Nepal', '12345678', 'sunam123', 'suman123', 'A+', 'MALE', '2007-07-13', 'Active');
 
 -- --------------------------------------------------------
 
@@ -809,7 +838,8 @@ INSERT INTO `prescription` (`prescriptionid`, `treatment_records_id`, `doctorid`
 (96, 0, 35, 22, '', 54, '2021-05-10', 'Active', 0),
 (97, 0, 35, 22, '', 55, '2021-05-16', 'Active', 0),
 (98, 0, 35, 57, '', 0, '2021-05-04', 'Active', 120),
-(99, 0, 35, 57, '', 0, '2021-05-12', 'Active', 120);
+(99, 0, 35, 57, '', 0, '2021-05-12', 'Active', 120),
+(100, 0, 35, 63, '', 0, '2021-06-04', 'Active', 131);
 
 -- --------------------------------------------------------
 
@@ -1099,7 +1129,8 @@ INSERT INTO `treatment_records` (`treatment_records_id`, `treatmentid`, `appoint
 (56, 14, 116, 7, 35, 'bvbvb', '1969598381KHADI JACKETS .jpg', '2018-04-04', '02:02:00', 'Active'),
 (57, 13, 117, 7, 35, 'gbgv', '2002948154KHADI JACKETS .jpg', '2018-04-04', '01:02:00', 'Active'),
 (58, 13, 119, 56, 35, 'mm', '430203084KHADI JACKETS .jpg', '2018-04-06', '02:02:00', 'Active'),
-(59, 14, 120, 57, 35, 'Treatment given for dengue fever', '29112image011.png', '2018-07-12', '01:00:00', 'Active');
+(59, 14, 120, 57, 35, 'Treatment given for dengue fever', '29112image011.png', '2018-07-12', '01:00:00', 'Active'),
+(60, 14, 131, 63, 35, 'ffff', '648400969', '2021-06-03', '09:01:00', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -1223,37 +1254,37 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `appointmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+  MODIFY `appointmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=133;
 
 --
 -- AUTO_INCREMENT for table `billing`
 --
 ALTER TABLE `billing`
-  MODIFY `billingid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `billingid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `billing_records`
 --
 ALTER TABLE `billing_records`
-  MODIFY `billingservice_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=205;
+  MODIFY `billingservice_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=208;
 
 --
 -- AUTO_INCREMENT for table `department`
 --
 ALTER TABLE `department`
-  MODIFY `departmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `departmentid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `doctor`
 --
 ALTER TABLE `doctor`
-  MODIFY `doctorid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `doctorid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- AUTO_INCREMENT for table `doctor_timings`
 --
 ALTER TABLE `doctor_timings`
-  MODIFY `doctor_timings_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `doctor_timings_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `medicine`
@@ -1271,7 +1302,7 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `patient`
 --
 ALTER TABLE `patient`
-  MODIFY `patientid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `patientid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT for table `payment`
@@ -1283,7 +1314,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `prescription`
 --
 ALTER TABLE `prescription`
-  MODIFY `prescriptionid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `prescriptionid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `prescription_records`
@@ -1313,7 +1344,7 @@ ALTER TABLE `treatment`
 -- AUTO_INCREMENT for table `treatment_records`
 --
 ALTER TABLE `treatment_records`
-  MODIFY `treatment_records_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `treatment_records_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
